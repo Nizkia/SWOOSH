@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_login" android:title="Login Account" />
+    <item android:id="@+id/nav_edit_account" android:title="Edit Account" />
+    <item android:id="@+id/nav_manage_delivery" android:title="Manage Delivery Preferences" />
+    <item android:id="@+id/nav_make_pickup" android:title="Make Pickup Request" />
+    <item android:id="@+id/nav_select_runner" android:title="Select Runner" />
+    <item android:id="@+id/nav_track_pickup" android:title="Track Pickup" />
+    <item android:id="@+id/nav_receive_status" android:title="Receive Delivery Status Notifications" />
+    <item android:id="@+id/nav_receive_updates" android:title="Receive Runner Updates" />
+    <item android:id="@+id/nav_completion_confirmation" android:title="Receive Delivery Completion Confirmation" />
+    <item android:id="@+id/nav_payment" android:title="Payment" />
+    <item android:id="@+id/nav_rate_runner" android:title="Rate Runner" />
+    <item android:id="@+id/nav_feedback" android:title="Give Feedback" />
+</menu>
