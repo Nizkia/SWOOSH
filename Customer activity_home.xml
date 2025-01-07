@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Logo Image View -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="200dp"
+        android:layout_height="207dp"
+        android:src="@drawable/logo"
+    android:contentDescription="App Logo"
+    android:layout_marginBottom="20dp"/>
+
+    <!-- Swoosh Text -->
+    <TextView
+        android:id="@+id/textViewSwoosh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Swoosh"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Campus Convenience, Delivered Text -->
+    <TextView
+        android:id="@+id/textViewCampusConvenience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campus Convenience, Delivered"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+</LinearLayout>
