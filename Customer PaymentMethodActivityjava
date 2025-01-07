@@ -1,0 +1,66 @@
+package com.example.myapplication;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.radiobutton.MaterialRadioButton;
+
+public class PaymentMethodActivity extends AppCompatActivity {
+
+    private MaterialRadioButton radioVisa;
+    private MaterialRadioButton radioMastercard;
+    private MaterialRadioButton radioPaypal;
+    private MaterialButton buttonPayNow;
+    private Toolbar toolbar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_payment_method);
+
+        // Initialize views
+        radioVisa = findViewById(R.id.radioVisa);
+        radioMastercard = findViewById(R.id.radioMastercard);
+        radioPaypal = findViewById(R.id.radioPaypal);
+        buttonPayNow = findViewById(R.id.buttonPayNow);
+        toolbar = findViewById(R.id.toolbar);
+
+        // Setup toolbar
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
+
+        // Setup pay button click listener
+        buttonPayNow.setOnClickListener(v -> {
+            if (radioVisa.isChecked()) {
+                processPayment("Visa");
+            } else if (radioMastercard.isChecked()) {
+                processPayment("Mastercard");
+            } else if (radioPaypal.isChecked()) {
+                processPayment("PayPal");
+            } else {
+                Toast.makeText(this, "Please select a payment method", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void processPayment(String paymentMethod) {
+//        Toast.makeText(this, "Processing payment with " + paymentMethod, Toast.LENGTH_SHORT).show();
+        // Add your payment processing logic here
+        Intent intent = new Intent(this, OrderConfirmedActivity.class);
+        intent.putExtra("payment_method", paymentMethod);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+}
