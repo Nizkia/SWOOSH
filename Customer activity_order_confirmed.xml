@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EA"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Confirmed"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@android:drawable/ic_dialog_info"
+                android:tint="#4CAF50"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Successful!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your order has been confirmed"
+                android:textSize="16sp"
+                android:layout_marginBottom="32dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Details"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount Paid:"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/textAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="RM 17.00"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="end"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Method:"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/textPaymentMethod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonBackToHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back to Home"
+                android:textSize="16sp"
+                android:backgroundTint="#6200EA"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
