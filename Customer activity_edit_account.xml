@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Enter your name"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Enter your email"
+        />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Enter your phone number"
+        />
+
+    <Button
+        android:id="@+id/buttonSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+</LinearLayout>
