@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "275402730017",
+    "project_id": "swooshv2-b2a0d",
+    "storage_bucket": "swooshv2-b2a0d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275402730017:android:c5ae8cd9803825cc975160",
+        "android_client_info": {
+          "package_name": "com.example.swooshv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuM4JzPsXUriUw2728ukDRypXBCdypLWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

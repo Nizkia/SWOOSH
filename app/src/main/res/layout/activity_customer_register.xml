@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/img_2"
+    tools:context=".CustomerRegister">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Top Image -->
+        <ImageView
+            android:id="@+id/register_top_image"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/img_1"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CardView for Registration Form -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <!-- Greeting Text -->
+        <TextView
+            android:id="@+id/textViewGreeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome!\nCreate an Account"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/made_tommy_eb"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+            <!-- Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:fontFamily="@font/mustica" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Matric Number Input Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUMatricNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Matric Number"
+                    android:inputType="text"
+                    android:fontFamily="@font/mustica" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Email Input Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/mustica"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Phone Number Input Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:fontFamily="@font/mustica"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Dorm Address Input Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dormAddressInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDormAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Dorm Address"
+                    android:inputType="text"
+                android:fontFamily="@font/mustica"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Dormitory Spinner -->
+            <Spinner
+                android:id="@+id/spUDormitory"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/spinner_background"
+                android:padding="8dp"
+                android:entries="@array/dormitory_choices"
+                android:hint="Dormitory"
+                android:fontFamily="@font/mustica"
+                android:prompt="@string/dormitory_prompt"/>
+
+            <!-- Dorm Block Spinner -->
+            <Spinner
+                android:id="@+id/spUDormBlock"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/spinner_background"
+                android:padding="8dp"
+                android:fontFamily="@font/mustica"/>
+
+            <!-- Faculty Spinner -->
+            <Spinner
+                android:id="@+id/spFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/spinner_background"
+                android:padding="8dp"
+                android:entries="@array/faculty_choices"
+                android:hint="Faculty"
+                android:fontFamily="@font/mustica"
+                android:prompt="@string/faculty_prompt" />
+
+        <!-- Password Input Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:endIconMode="password_toggle">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAPassw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mustica"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Re-enter Password Input Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etReAPassw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Re-enter Password"
+                android:fontFamily="@font/mustica"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegisterNow"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#063970"
+            android:text="Register"
+            android:textSize="18sp"
+            android:fontFamily="@font/made_tommy_eb"
+            android:textColor="@android:color/white" />
+
+        <!-- Back to Login Text -->
+        <TextView
+            android:id="@+id/tvBacktoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/cocobold"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

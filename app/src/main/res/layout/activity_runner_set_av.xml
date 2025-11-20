@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/img_3">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/img_1"
+        android:scaleType="centerCrop" />
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/tvAvailabilityInfoOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you switch to Available, you will receive updates about incoming tasks, notifications, and other updates."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/mustica"/>
+
+    <TextView
+        android:id="@+id/tvAvailabilityInfoOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you switch this off, you will not receive notifications about tasks."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/mustica" />
+
+    <Switch
+        android:id="@+id/switchAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+    android:padding="6dp"
+    android:text="Set Availability"
+    android:textSize="26sp"
+    android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/mustica"/>
+
+
+</LinearLayout>

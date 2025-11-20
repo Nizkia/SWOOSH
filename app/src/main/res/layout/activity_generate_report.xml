@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/skyBlue">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generated Report"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/made_tommy_eb"
+        android:textColor="@color/darkBlue"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- ScrollView for Report Content -->
+    <ScrollView
+        android:id="@+id/svReportContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvHeader"
+        android:layout_marginTop="16dp">
+
+        <!-- Report Content TextView -->
+        <TextView
+            android:id="@+id/tvReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mustica"
+            android:text="Report will be shown here"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:padding="8dp"
+            android:background="@android:color/white" />
+    </ScrollView>
+
+</RelativeLayout>

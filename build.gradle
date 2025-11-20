@@ -1,0 +1,16 @@
+buildscript {
+    repositories {
+        google() // Required for Android Gradle Plugin
+        mavenCentral() // Required for other dependencies
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.2'
+        // Experimental version supporting compileSdk = 34
+        classpath 'com.google.gms:google-services:4.4.0' // Google Services Plugin
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

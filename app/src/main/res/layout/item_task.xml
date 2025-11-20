@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#e4edf2">
+
+    <TextView
+        android:id="@+id/tvDocumentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Document ID"
+        android:textStyle="bold"
+        android:fontFamily="@font/made_tommy_eb"/>
+
+    <TextView
+        android:id="@+id/tvDTPickupMade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:fontFamily="@font/mustica"/>
+
+    <TextView
+        android:id="@+id/tvUEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:fontFamily="@font/mustica"/>
+
+    <TextView
+        android:id="@+id/tvNoOfItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of Items"
+        android:fontFamily="@font/mustica"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:fontFamily="@font/mustica"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnAcceptTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept Task"
+        android:backgroundTint="#6497b1"
+        android:fontFamily="@font/mustica"/>
+</LinearLayout>

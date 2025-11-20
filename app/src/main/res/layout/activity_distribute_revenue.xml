@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/img_3">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/img_1"
+        android:scaleType="centerCrop" />
+
+    <!-- Total Revenue -->
+    <TextView
+        android:id="@+id/tvTotalRevenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Revenue: RM 0.00"
+        android:textSize="28sp"
+        android:fontFamily="@font/made_tommy_eb"
+        android:layout_gravity="center" />
+
+    <!-- RecyclerView for revenue list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDistributeRevenue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/mustica"
+        android:layout_weight="1" />
+
+    <!-- Admin Percentage Input -->
+    <EditText
+        android:id="@+id/etAdminPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Admin Percentage"
+        android:textSize="24dp"
+        android:fontFamily="@font/mustica"
+        android:inputType="numberDecimal" />
+
+    <!-- Runners Percentage Input -->
+    <EditText
+        android:id="@+id/etRunnersPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:fontFamily="@font/mustica"
+        android:hint="Enter Runners Percentage"
+        android:inputType="numberDecimal" />
+
+    <!-- Calculate Shares Button -->
+    <Button
+        android:id="@+id/btnCalculateShares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Shares"
+        android:fontFamily="@font/cocobold"/>
+
+    <!-- Admin Share -->
+    <TextView
+        android:id="@+id/tvAdminShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Share: RM0.00"
+        android:textSize="16sp"
+        android:fontFamily="@font/mustica"
+        android:textColor="@android:color/white"/>
+
+    <!-- Runners Share -->
+    <TextView
+        android:id="@+id/tvRunnersShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Runners Share: RM0.00"
+        android:textSize="16sp"
+        android:fontFamily="@font/mustica"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,232 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/img">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Recipient Details -->
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/CustomCardViewStyle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipient Details"
+                    android:fontFamily="@font/made_tommy_eb"
+                    android:textSize="26sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvRecipientName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recipient Name: "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/mustica"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvRecipientDormitory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dormitory: "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/mustica"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvRecipientDormBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dorm Block: "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/mustica"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvRecipientAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address: "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/mustica"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvRecipientPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number: "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/mustica"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Number of Parcels (Spinner) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Parcels"
+            android:fontFamily="@font/made_tommy_eb"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spNoOfParcel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:fontFamily="@font/made_tommy_eb"
+            android:minHeight="48dp" />
+
+        <!-- Parcel Tracking Number (EditText) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parcel Tracking Number"
+            android:fontFamily="@font/made_tommy_eb"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etParcelTrackingNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Tracking Number"
+            android:fontFamily="@font/mustica"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Delivery Courier (Spinner) -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Courier"
+            android:fontFamily="@font/made_tommy_eb"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spDeliveryCourier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/mustica"
+            android:padding="12dp"
+            android:minHeight="48dp"/>
+
+        <!-- Parcel Size (Radio Group) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parcel Size"
+            android:fontFamily="@font/made_tommy_eb"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupParcelSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small"
+                android:fontFamily="@font/mustica"/>
+
+            <RadioButton
+                android:id="@+id/rbMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:fontFamily="@font/mustica"/>
+
+            <RadioButton
+                android:id="@+id/rbLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large"
+                android:fontFamily="@font/mustica"/>
+        </RadioGroup>
+
+        <!-- Place of Drop-off -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place of Drop-off"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/made_tommy_eb"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewDropOffPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PUSAT PERSATUAN PELAJAR (PPP) UTeM"
+            android:fontFamily="@font/mustica"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#E8E8E8"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Time of Arrival -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time of Arrival"
+            android:fontFamily="@font/made_tommy_eb"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnPickTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"
+            android:backgroundTint="#697ea5"
+            android:fontFamily="@font/mustica"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:fontFamily="@font/made_tommy_eb"
+            android:padding="12dp"
+            android:backgroundTint="#697ea5"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

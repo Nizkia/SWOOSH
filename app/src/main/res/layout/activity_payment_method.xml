@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EA"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Summary and Payment"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Recipient Details -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipient Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvRecipientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: " />
+
+            <TextView
+                android:id="@+id/tvRecipientAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: " />
+
+            <TextView
+                android:id="@+id/tvRecipientPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: " />
+
+            <!-- Parcel Details -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parcel Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvNumberOfParcels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Parcels: " />
+
+            <TextView
+                android:id="@+id/tvTrackingNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracking Number: " />
+
+            <TextView
+                android:id="@+id/tvDeliveryCourier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Courier: " />
+
+            <TextView
+                android:id="@+id/tvParcelSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parcel Size: " />
+
+            <TextView
+                android:id="@+id/tvDropOffPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drop Off Place: " />
+
+            <TextView
+                android:id="@+id/tvTimeOfArrival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time of Arrival: " />
+
+            <!-- Runner Details -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runner Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvRunnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runner Name: " />
+
+            <!-- Payment Method -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Cash On Delivery -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cash On Delivery"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radioCash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RadioGroup>
+
+            <!-- Total Price -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MYR " />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Confirm Payment Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonConfirmPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Payment"
+        android:backgroundTint="#8BC34A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- ImageView (Top Left) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/img_1"
+                android:contentDescription="Top Left Image"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+    <!-- Combined CardView for all fields -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <!-- Runner Name (Uneditable) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mustica"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/tvRName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/mustica"
+            android:textColor="@color/black"
+            android:padding="8dp" />
+
+        <!-- Runner Email (Uneditable) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mustica"/>
+        <TextView
+            android:id="@+id/tvREmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@color/lightGray"
+            android:fontFamily="@font/mustica"
+            android:textColor="@color/black"
+            android:padding="8dp" />
+
+        <!-- Runner ID (Uneditable) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Runner ID"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mustica"/>
+        <TextView
+            android:id="@+id/tvRunnerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@color/lightGray"
+            android:fontFamily="@font/mustica"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+
+        <!-- Phone Number (Editable) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mustica"/>
+
+        <EditText
+            android:id="@+id/etRPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="Enter Phone Number"
+            android:fontFamily="@font/mustica"
+            android:inputType="phone"
+            android:padding="16dp" />
+
+        <!-- Vehicle Number (Editable) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mustica"/>
+        <EditText
+            android:id="@+id/etRVehicleNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Number"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mustica"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <!-- Vehicle Type (Editable) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mustica"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+        <EditText
+            android:id="@+id/etRVehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Vehicle Type"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mustica"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <!-- Save Changes Button -->
+        <Button
+            android:id="@+id/btnSaveChanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:backgroundTint="#33425d"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/mustica" />
+
+        <!-- Deactivate Account Button -->
+        <Button
+            android:id="@+id/btnDeactivateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deactivate Account"
+            android:backgroundTint="#c9223b"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/mustica"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

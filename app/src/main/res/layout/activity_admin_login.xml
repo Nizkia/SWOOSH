@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img_2"
+    tools:context=".CustomerLogin">
+
+    <!-- Top image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/img_1" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+    <!-- Top left greeting text -->
+            <TextView
+                android:id="@+id/textViewGreeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello!\nWelcome Back, Admin."
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/darkBlue"
+                android:fontFamily="@font/made_tommy_eb" />
+
+    <!-- Email input field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Admin ID"
+            android:fontFamily="@font/mustica"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/darker_gray"  />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password input field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAPassw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:fontFamily="@font/mustica"
+            android:inputType="textPassword"
+            android:drawablePadding="8dp"
+            android:textColorHint="@android:color/darker_gray" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Forgot password text -->
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:text="Forgot Password?"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="@font/mustica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
+
+    <!-- Sign In button -->
+
+    <Button
+        android:id="@+id/btnLoginLI"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#063970"
+        android:text="Sign In"
+        android:fontFamily="@font/made_tommy_eb"
+        android:textColor="@android:color/white" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

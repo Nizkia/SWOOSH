@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/lightBlue">
+
+    <!-- Welcome and Register Section -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/made_tommy_eb"
+        android:text="Register"
+        android:textColor="@color/darkBlue"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:padding="8dp" />
+
+
+    <TextView
+        android:id="@+id/tvWelcomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, User!"
+        android:fontFamily="@font/made_tommy_eb"
+        android:textSize="20sp"
+        android:textColor="@color/darkBlue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="60dp" />
+
+    <ImageView
+        android:id="@+id/ivLogout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/tvWelcomeUser"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_logout"
+        android:contentDescription="Logout Icon"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <!-- ImageView for Parcel -->
+    <ImageView
+        android:id="@+id/ivParcelImage"
+        android:layout_width="277dp"
+        android:layout_height="210dp"
+        android:layout_below="@id/tvRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:contentDescription="Parcel Image"
+        android:src="@drawable/parcel2" />
+
+
+
+    <!-- Main Menu Buttons -->
+    <LinearLayout
+        android:id="@+id/mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivParcelImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnParcel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Parcel"
+            android:fontFamily="@font/made_tommy_eb"
+            android:backgroundTint="#33425d"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnFood"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Food"
+            android:fontFamily="@font/made_tommy_eb"
+            android:backgroundTint="#33425d"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Drivers Around You Section -->
+    <TextView
+        android:id="@+id/tvRunnerAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Runners Around You, For you."
+        android:fontFamily="@font/made_tommy_eb"
+        android:textSize="18sp"
+        android:textColor="#242444"
+        android:layout_below="@id/mainMenu"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvBeRunner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Be a Runner today!"
+        android:fontFamily="@font/made_tommy_eb"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#242444"
+        android:layout_below="@id/tvRunnerAY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnRegisterRunner"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="#5385e4"
+        android:text="Register to be a Runner"
+        android:fontFamily="@font/made_tommy_eb"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tvBeRunner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvAdminlogin"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Admin"
+        android:fontFamily="@font/made_tommy_eb"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

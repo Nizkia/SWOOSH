@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Google Map View -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Map displaying runner's location" />
+
+    <!-- Bottom Card for Tracking Details -->
+    <LinearLayout
+        android:id="@+id/bottomCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card_background"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:fontFamily="@font/mustica"
+            android:textColor="@color/darkBlue"
+            android:backgroundTint="@color/lightBlue"
+            android:layout_margin="5dp"
+            android:padding="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"  />
+
+        <TextView
+            android:id="@+id/tvPickupID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup "
+            android:textSize="18sp"
+            android:fontFamily="@font/made_tommy_eb"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black" />
+
+        <!-- ETA and Status -->
+        <TextView
+            android:id="@+id/tvETA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arriving by: "
+            android:textSize="18sp"
+            android:fontFamily="@font/made_tommy_eb"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out for delivery!"
+            android:textSize="16sp"
+            android:fontFamily="@font/mustica"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black" />
+
+        <!-- Runner Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/ivRunnerProfile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/deliveryguy"
+                android:layout_marginRight="12dp"
+                android:contentDescription="Runner profile image"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRunnerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Runner:"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mustica"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvRunnerPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone:"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mustica"
+                    android:textColor="#545454" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Route Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBarRoute"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Contact Runner Button -->
+        <Button
+            android:id="@+id/btnContactRunner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Runner"
+            android:backgroundTint="#30405e"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/mustica"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

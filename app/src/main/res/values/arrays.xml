@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="faculty_choices">
+        <item>FTMK</item>
+        <item>FTKIP</item>
+        <item>FTKEK</item>
+        <item>FTKE</item>
+        <item>FPTT</item>
+    </string-array>
+
+        <!-- Options for spNoOfParcel -->
+        <string-array name="parcel_number_options">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+        </string-array>
+
+        <!-- Options for spDeliveryCourier -->
+        <string-array name="courier_options">
+            <item>Shopee express</item>
+            <item>GDex</item>
+            <item>JnT</item>
+            <item>PosLaju</item>
+            <item>DHL</item>
+            <item>FedEx</item>
+            <item>Skynet Express</item>
+            <item>Ninja Van</item>
+            <item>EasyParcel</item>
+            <item>Lalamove</item>
+            <item>City-Link Express</item>
+            <item>Others</item>
+        </string-array>
+
+    <string-array name="food_courier_options">
+        <item>ShopeeFood</item>
+        <item>FoodPanda</item>
+        <item>GrabFood</item>
+        <item>DahMakan</item>
+        <item>Bekal</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="dormitory_choices">
+        <item>Satria</item>
+        <item>Lestari</item>
+        <item>Al-Jazari</item>
+    </string-array>
+
+    <!-- Dorm Block Placeholder Choices (not used dynamically) -->
+    <string-array name="dorm_block_choices">
+        <item>Select Dorm Block</item>
+    </string-array>
+
+    <!-- Vehicle Type Options -->
+    <string-array name="vehicle_type_options">
+        <item>Motorcycle</item>
+        <item>Car</item>
+    </string-array>
+
+    <!-- Bank Options -->
+    <string-array name="bank_options">
+        <item>Affin Bank Berhad</item>
+        <item>Ambank</item>
+        <item>Alliance Bank</item>
+        <item>Bank Islam Malaysia Berhad</item>
+        <item>Bank Muamalat Malaysia</item>
+        <item>Maybank</item>
+        <item>RHB</item>
+        <item>Bank Rakyat</item>
+        <item>CIMB</item>
+    </string-array>
+
+
+</resources>

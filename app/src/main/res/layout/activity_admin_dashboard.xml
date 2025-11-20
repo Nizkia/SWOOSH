@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_3"
+    android:padding="16dp">
+
+    <!-- Logo on Left Corner -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/img_1"
+        android:scaleType="centerCrop" />
+
+    <!-- CardView for Welcome Text and Buttons -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tvWelcomeAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/made_tommy_eb"
+        android:text="Admin Dashboard"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#4d4b63" />
+
+    <!-- Button to Generate Report -->
+    <Button
+        android:id="@+id/btnGenerateReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Report"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#063970"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/cocobold" />
+
+    <!-- Button to Review Feedback -->
+    <Button
+        android:id="@+id/btnReviewFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review Feedback"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#063970"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/cocobold" />
+
+    <!-- Button to Calculate Revenue -->
+    <Button
+        android:id="@+id/btnCalculateRevenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Revenue"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#063970"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/cocobold" />
+
+    <!-- Button to Distribute Revenue -->
+    <Button
+        android:id="@+id/btnDistributeRevenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distribute Revenue"
+        android:backgroundTint="#063970"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/cocobold" />
+        <Button
+            android:id="@+id/btnGenerateGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Graph"
+            android:backgroundTint="#063970"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/breakmakers" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

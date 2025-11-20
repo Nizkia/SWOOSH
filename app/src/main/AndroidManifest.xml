@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SWOOSHv2"
+        tools:targetApi="31">
+        <activity
+            android:name=".FoodTracking"
+            android:exported="false" />
+        <activity
+            android:name=".RunnerEarns"
+            android:exported="false" />
+        <activity
+            android:name=".RunnerComplete"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivityFood"
+            android:exported="false" />
+        <activity
+            android:name=".FindRunnerFood"
+            android:exported="false" />
+        <activity
+            android:name=".PickupRequestFood"
+            android:exported="false" />
+        <activity
+            android:name=".DistributeRevenue"
+            android:exported="false" />
+        <activity
+            android:name=".CalculateRevenue"
+            android:exported="false" />
+        <activity
+            android:name=".ListAvailableTasksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RunnerSetAv"
+            android:exported="false" />
+        <activity
+            android:name=".RunnerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".RunnerDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".RunnerLogin"
+            android:exported="false"
+            android:theme="@style/Theme.SWOOSHv2" />
+        <activity
+            android:name=".GenerateGraphActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SWOOSHv2" />
+        <activity
+            android:name=".RunnerRegister"
+            android:exported="false" />
+        <activity
+            android:name=".RunnerTracking"
+            android:exported="false" />
+        <activity android:name=".TaskDetailsActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCjCJ3yX9BVV1Hvdg7gYvl4PiW3Krki1V4" />
+
+        <activity
+            android:name=".FindRunner"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".PickupRequestParcel"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerRegister"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateReport"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RatingSubmissionSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderConfirmedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
